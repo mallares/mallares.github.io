@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta del Restaurante</title>
+    <link rel="stylesheet" href="../css/cartilla.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="../images/KING-GRASAS-LOGOTIPO-SF.png" alt="Logotipo del Restaurante" class="logo">
+            <h1>King Grasas</h1>
+        </div>
+        <p class="numero">Num: 914259061 llamadas/whatsapp</p>
+    </header>
+    <main>
+            <!-- Busqueda de negocio -->
+    <section class="busqueda-filtro container boton">
+        <select id="categoryFilter" onchange="filtrarNegocios()">
+            <option value="all">Toda la Cartilla</option>
+            <option value="hamburguesas">Hamburguesas</option>
+            <option value="mostritos-pollo-braza">Mostritos Pollo Braza</option>
+            <option value="mostritos-pollo-a-la-parrilla">Mostritos Pollo a la Parrilla</option>
+            <option value="chaufas-y-sopa-wantan">Chaufas y Sopa Wantan</option>
+            <option value="caldos-de-gallina">Caldos De Gallina</option>
+            <option value="pollos-a-la-braza">Pollos a la Braza</option>
+            <option value="antonjitos-de-la-casa">Antonjitos de la Casa</option>
+            <option value="ceviches">Ceviches</option>
+            <option value="parihuelas">Parihuelas</option>
+            <option value="chicharrón-de-pescado">Chicharrón de Pescado</option>
+            <option value="parrillas-y-chuletas">Parrillas y Chuletas</option>
+            <option value="alitas-broaster">Alitas Broaster</option>
+            <option value="guarniciones-y-extras">Guarniciones y Extras</option>
+            <option value="salchipapas">Salchipapas</option>
+            <option value="salchipollo">Salchipollo</option>
+            <option value="mollejitas">Mollejitas</option>
+            <option value="pollo-frito">Pollo Frito</option>
+            <option value="mostrito-de-alitas-broaster">Mostrito de Alitas Broaster</option>
+            <option value="combos">Combos</option>
+        </select>
+    </section>
+    
+        <section class="menu">
+            <div class="menu-category hamburguesas">
+                <h2>Hamburguesas</h2>
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>Hamburguesa Clasica</h3>
+                        <p>+ Carne</p>
+                        <p>+ Papas fritas o al hilo</p>
+                        <p>+ Queso</p>
+                        <p>+ Cremas</p>
+                        <h3 class="precio">S/7.00</h3>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>Hamburguesa De Pollo</h3>
+                        <p>+ Carne de Pollo</p>
+                        <p>+ Papas fritas o al hilo</p>
+                        <p>+ Queso</p>
+                        <p>+ Cremas</p>
+                        <h3 class="precio">S/7.00</h3>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>Hamburguesa Royal</h3>
+                        <p>+ Carne o Pollo</p>
+                        <p>+ Papas fritas o al hilo</p>
+                        <p>+ Jamón</p>
+                        <p>+ Queso</p>
+                        <p>+ Huevo Frito</p>
+                        <p>+ Cremas</p>
+                        <h3 class="precio">S/9.00</h3>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>Hamburguesa Hawaiana</h3>
+                        <p>+ Carne</p>
+                        <p>+ Papas fritas o al hilo</p>
+                        <p>+ Queso</p>
+                        <p>+ Piña</p>
+                        <p>+ Jamón</p>
+                        <p>+ Cremas</p>
+                        <h3 class="precio">S/12.00</h3>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>Hamburguesa Bimbo</h3>
+                        <p>+ Carne</p>
+                        <p>+ Papas fritas o al hilo</p>
+                        <p>+ Queso</p>
+                        <p>+ Salsas</p>
+                        <p>+ Cremas</p>
+                        <h3 class="precio">S/13.00</h3>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>Hamburguesa King Kong</h3>
+                        <p>+ 3 Capas de carne</p>
+                        <p>+ Papas fritas o al hilo</p>
+                        <p>+ Piña</p>
+                        <p>+ Jamón</p>
+                        <p>+ Cremas</p>
+                        <h3 class="precio">S/19.90</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="menu-category mostritos-pollo-braza">
+                <h2>Mostritos Pollo Braza</h2>
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>Mostrito 1/8 Pollo Braza</h3>
+                        <p>+ Chaufa pequeño</p>
+                        <p>+ 1/8 Pollo a la braza</p>
+                        <p>+ Ensaladas</p>
+                        <p>+ Papas</p>
+                        <p>+ Cremas</p>
+                        <h3 class="precio">S/16.00</h3>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>Mostrito 1/4 Pollo Braza</h3>
+                        <p>+ Chaufa pequeño</p>
+                        <p>+ 1/4 Pollo a la braza</p>
+                        <p>+ Ensaladas</p>
+                        <p>+ Papas</p>
+                        <p>+ Cremas</p>
+                        <h3 class="precio">S/25.00</h3>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>Mostrito 1/2 Pollo Braza</h3>
+                        <p>+ Chaufa grande</p>
+                        <p>+ 1/2 Pollo a la braza</p>
+                        <p>+ Ensaladas</p>
+                        <p>+ Papas</p>
+                        <p>+ Cremas</p>
+                        <h3 class="precio">S/45.00</h3>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>Mostrito 1 Pollo Braza</h3>
+                        <p>+ Chaufa grande</p>
+                        <p>+ 1 Pollo a la braza</p>
+                        <p>+ Ensaladas</p>
+                        <p>+ Papas</p>
+                        <p>+ Cremas</p>
+                        <h3 class="precio">S/69.00</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category mostritos-pollo-a-la-parrilla">
+                <h2>Mostritos Pollo a la Parrilla</h2>
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>Mostrito Pequeño</h3>
+                        <p>+ Porcion pequeña de chaufa</p>
+                        <p>+ Plancha pollo a la parrilla</p>
+                        <p>+ Ensaladas</p>
+                        <p>+ Papas</p>
+                        <p>+ Cremas</p>
+                        <h3 class="precio">S/15.00</h3>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>Mostro Regular</h3>
+                        <p>+ Porcion Regular de Chaufa</p>
+                        <p>+ Plancha pollo a la parrilla</p>
+                        <p>+ Ensaladas</p>
+                        <p>+ Papas</p>
+                        <p>+ Cremas</p>
+                        <h3 class="precio">S/24.00</h3>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>Mostrazo Grande</h3>
+                        <p>+ Porcion Grande de Chaufa</p>
+                        <p>+ Plancha pollo a la parrilla</p>
+                        <p>+ Ensaladas</p>
+                        <p>+ Papas</p>
+                        <p>+ Cremas</p>
+                        <h3 class="precio">S/44.00</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category chaufas-y-sopa-wantan">
+                <h2>Chaufas y Sopa Wantan</h2>
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>Chaufa Chino</h3>
+                        <p>+ Porcion de arroz chaufa solo</p>
+                        <h3 class="precio">S/11.00</h3>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>Chaufa Chino + Sopa Wantan</h3>
+                        <p>+ Porcion de arroz chaufa solo</p>
+                        <p>+ 1 Sopa Wantan o China</p>
+                        <h3 class="precio">S/15.00</h3>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>Sopa Wantan</h3>
+                        <p>+ Porcion De Sopa Wantan</p>
+                        <p>+ Guarniciones</p>
+                        <h3 class="precio">S/8.00</h3>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>Combo (3 en 1)</h3>
+                        <p>+ 1 porcion de arroz Chaufa chino</p>
+                        <p>+ 1 Sopa Wantan o China</p>
+                        <p>+ Parrilla de Pollo</p>
+                        <h3 class="precio">S/25.00</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category caldos-de-gallina">
+                <h2>Caldos De Gallina</h2>
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>Caldo De Gallina Pequeño</h3>
+                        <p>+ 1 Caldo de Gallina pequeño</p>
+                        <p>+ Guarniciones</p>
+                        <h3 class="precio">S/10.00</h3>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>Caldo De Gallina Mediano</h3>
+                        <p>+ 1 Caldo de Gallina Mediano</p>
+                        <p>+ Guarniciones</p>
+                        <h3 class="precio">S/15.00</h3>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>Combo (2 en 1)</h3>
+                        <p>+ 1 Caldo de Gallina Mediano</p>
+                        <p>+ Guarniciones</p>
+                        <p>+ Chaufa Chino</p>
+                        <h3 class="precio">S/22.00</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category pollos-a-la-braza">
+                <h2>Pollos a la Braza</h2>
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>1/8 de Pollo a la Braza</h3>
+                        <p>+ 1/8 de pollo a la braza</p>
+                        <p>+ papas fritas</p>
+                        <p>+ ensalada</p>
+                        <p>+ cremas</p>
+                        <h3 class="precio">S/10.00</h3>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>1/4 de Pollo a la Braza</h3>
+                        <p>+ 1/4 de pollo a la braza</p>
+                        <p>+ papas fritas</p>
+                        <p>+ ensalada</p>
+                        <p>+ cremas</p>
+                        <h3 class="precio">S/19.00</h3>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>1/2 de Pollo a la Braza</h3>
+                        <p>+ 1/2 de pollo a la braza</p>
+                        <p>+ papas fritas</p>
+                        <p>+ ensalada</p>
+                        <p>+ cremas</p>
+                        <h3 class="precio">S/35.00</h3>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>1 de pollo a la braza</h3>
+                        <p>+ 1 pollo a la braza entero</p>
+                        <p>+ papas fritas</p>
+                        <p>+ ensalada</p>
+                        <p>+ cremas</p>
+                        <h3 class="precio">S/60.00</h3>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>Promo 1</h3>
+                        <p>+ 1 pollo a la braza entero</p>
+                        <p>+ papas fritas</p>
+                        <p>+ ensalada</p>
+                        <p>+ cremas</p>
+                        <p>+ gaseosa familiar</p>
+                        <h3 class="precio">S/65.00</h3>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>Promo 1</h3>
+                        <p>+ 1 pollo a la braza entero</p>
+                        <p>+ papas fritas</p>
+                        <p>+ ensalada</p>
+                        <p>+ cremas</p>
+                        <p>+ gaseosa familiar</p>
+                        <p>+ 2 hamburgesas calsicas</p>
+                        <h3 class="precio">S/79.00</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category antonjitos-de-la-casa">
+                <h2>Antonjitos de la Casa</h2>
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>Mollejitas</h3>
+                        <p>+ porcion de mollejitas</p>
+                        <p>+ papas fritas</p>
+                        <p>+ ensalada</p>
+                        <p>+ cremas</p>
+                        <h3 class="precio">S/10.00</h3>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>Anticuchos</h3>
+                        <p>+ porcion de anticuchos</p>
+                        <p>+ papas fritas</p>
+                        <p>+ cremas</p>
+                        <h3 class="precio">S/10.00</h3>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>Brochetas</h3>
+                        <p>+ corazones</p>
+                        <p>+ mollejitas</p>
+                        <p>+ camote</p>
+                        <p>+ cremas</p>
+                        <h3 class="precio">S/10.00</h3>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>Aguadito Verde</h3>
+                        <p>+ porcion de aguadito</p>
+                        <p>+ guarniciones</p>
+                        <h3 class="precio">S/5.00</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category ceviches">
+                <h2>Ceviches</h2>
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>De Caballa Fuente Pequeña</h3>
+                        <p>+ porcion de ceviche fuente pequeña</p>
+                        <h3 class="precio">S/15.00</h3>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>De Caballa Fuente Mediana</h3>
+                        <p>+ porcion de ceviche fuente mediana</p>
+                        <h3 class="precio">S/25.00</h3>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>De Caballa Fuente Grande</h3>
+                        <p>+ porcion de ceviche fuente grande</p>
+                        <h3 class="precio">S/35.00</h3>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>De Filete Fuente Pequeña</h3>
+                        <p>+ porcion de ceviche fuente pequeña</p>
+                        <h3 class="precio">S/20.00</h3>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>De Filete Fuente Mediana</h3>
+                        <p>+ porcion de ceviche fuente mediana</p>
+                        <h3 class="precio">S/30.00</h3>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>De Filete Fuente Grande</h3>
+                        <p>+ porcion de ceviche fuente grande</p>
+                        <h3 class="precio">S/45.00</h3>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>De Cabrilla Fuente Pequeña</h3>
+                        <p>+ porcion de ceviche fuente pequeña</p>
+                        <h3 class="precio">S/25.00</h3>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>De Cabrilla Fuente mediana</h3>
+                        <p>+ porcion de ceviche fuente mediana</p>
+                        <h3 class="precio">S/35.00</h3>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>De Cabrilla Fuente Grande</h3>
+                        <p>+ porcion de ceviche fuente grande</p>
+                        <h3 class="precio">S/50.00</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category parihuelas">
+                <h2>Parihuelas</h2>
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>Fuente Pequeña</h3>
+                        <p>+ fuente pequeña</p>
+                        <p>+ guarniciones</p>
+                        <h3 class="precio">S/35.00</h3>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>Fuente Mediana</h3>
+                        <p>+ fuente mediana</p>
+                        <p>+ guarniciones</p>
+                        <h3 class="precio">S/55.00</h3>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>Fuente Grande</h3>
+                        <p>+ fuente grande</p>
+                        <p>+ guarniciones</p>
+                        <h3 class="precio">S/65.00</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category chicharrón-de-pescado">
+                <h2>Chicharrón de Pescado</h2>
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>Fuente Pequeña</h3>
+                        <p>+ fuente pequeña</p>
+                        <p>+ cremas</p>
+                        <h3 class="precio">S/25.00</h3>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>Fuente Mediana</h3>
+                        <p>+ fuente mediana</p>
+                        <p>+ cremas</p>
+                        <h3 class="precio">S/35.00</h3>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>Fuente Grande</h3>
+                        <p>+ fuente grande</p>
+                        <p>+ cremas</p>
+                        <h3 class="precio">S/50.00</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category parrillas-y-chuletas">
+                <h2>Parrillas y Chuletas</h2>
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>Parrilla de Pollo</h3>
+                        <p>+ pollo a la parrilla</p>
+                        <p>+ papas fritas</p>
+                        <p>+ ensalada</p>
+                        <p>+ cremas</p>
+                        <h3 class="precio">S/10.00</h3>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>Parrilla de Pollo + Chaufa</h3>
+                        <p>+ pollo a la parrilla</p>
+                        <p>+ papas fritas</p>
+                        <p>+ ensalada</p>
+                        <p>+ cremas</p>
+                        <p>+ chaufa chino</p>
+                        <h3 class="precio">S/15.00</h3>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>Chuleta de Cerdo</h3>
+                        <p>+ cheleta de cerdo</p>
+                        <p>+ papas fritas</p>
+                        <p>+ ensalada</p>
+                        <p>+ cremas</p>
+                        <h3 class="precio">S/15.00</h3>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>Chuleta de Cerdo + Chaufa</h3>
+                        <p>+ chuleta de cerdo</p>
+                        <p>+ papas fritas</p>
+                        <p>+ ensalada</p>
+                        <p>+ cremas</p>
+                        <p>+ chaufa chino</p>
+                        <h3 class="precio">S/20.00</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category alitas-broaster">
+                <h2>Alitas Broaster</h2>
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>1 Alita Broaster</h3>
+                        <p>+ 1 alita broaster en una sola porción</p>
+                        <p>+ papas fritas</p>
+                        <p>+ ensalada</p>
+                        <p>+ cremas</p>
+                        <h3 class="precio">S/7.00</h3>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>2 Alitas Broaster</h3>
+                        <p>+ 2 alitas broaster en una sola porción</p>
+                        <p>+ papas fritas</p>
+                        <p>+ ensalada</p>
+                        <p>+ cremas</p>
+                        <h3 class="precio">S/13.00</h3>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>3 Alitas Broaster</h3>
+                        <p>+ 3 alitas broaster en una sola porción</p>
+                        <p>+ papas fritas</p>
+                        <p>+ ensalada</p>
+                        <p>+ cremas</p>
+                        <h3 class="precio">S/19.00</h3>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>5 Alitas Broaster</h3>
+                        <p>+ 5 alitas broaster en una sola porción</p>
+                        <p>+ papas fritas</p>
+                        <p>+ ensalada</p>
+                        <p>+ cremas</p>
+                        <h3 class="precio">S/25.00</h3>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>10 Alitas Broaster</h3>
+                        <p>+ 10 alitas broaster en una sola porción</p>
+                        <p>+ papas fritas</p>
+                        <p>+ ensalada</p>
+                        <p>+ cremas</p>
+                        <h3 class="precio">S/45.00</h3>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>20 Alitas Broaster</h3>
+                        <p>+ 20 alitas broaster en una sola porción</p>
+                        <p>+ papas fritas</p>
+                        <p>+ ensalada</p>
+                        <p>+ cremas</p>
+                        <h3 class="precio">S/70.00</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category guarniciones-y-extras">
+                <h2>Guarniciones y Extras</h2>
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>Arroz Blanco</h3>
+                        <p>+ porcion de arroz blanco</p>
+                        <h3 class="precio">S/5.00</h3>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>Arroz Chaufa</h3>
+                        <p>+ porcion de arroz cahufa</p>
+                        <h3 class="precio">S/7.00</h3>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>Chifles</h3>
+                        <p>+ porcion de chifles</p>
+                        <h3 class="precio">S/3.00</h3>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>Cancha</h3>
+                        <p>+ porcion de cancha</p>
+                        <h3 class="precio">S/3.00</h3>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>Crema de Ají</h3>
+                        <p>+ crema extra</p>
+                        <h3 class="precio">S/1.00</h3>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>Crema de Mayonesa</h3>
+                        <p>+ crema extra</p>
+                        <h3 class="precio">S/1.00</h3>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>Crema de Ketchup</h3>
+                        <p>+ crema extra</p>
+                        <h3 class="precio">S/1.00</h3>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>Crema de Mostasa</h3>
+                        <p>+ crema extra</p>
+                        <h3 class="precio">S/1.00</h3>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>Bolsa Chequera</h3>
+                        <p>+ bolsa chequera extra</p>
+                        <h3 class="precio">S/0.50</h3>
+                    </div>
+                </div><div class="menu-item">
+                    <div class="menu-info">
+                        <h3>Tapers</h3>
+                        <p>+ taper extra</p>
+                        <h3 class="precio">S/0.50</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category salchipapas">
+                <h2>Salchipapas</h2>
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>Salchipapa Común</h3>
+                        <p>+ Salchichas Fritas</p>
+                        <p>+ Papas Fritas</p>
+                        <p>+ Ensalada</p>
+                        <p>+ Cremas</p>
+                        <h3 class="precio">S/7.00</h3>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>Salchi Mostro</h3>
+                        <p>+ Arroz Chaufa</p>
+                        <p>+ Salchichas Fritas</p>
+                        <p>+ Papas Fritas</p>
+                        <p>+ Ensalada</p>
+                        <p>+ Cremas</p>
+                        <h3 class="precio">S/15.00</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="menu-category salchipollo">
+                <h2>Salchipollo</h2>
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>Salchipollo Común</h3>
+                        <p>+ Pollo Frito</p>
+                        <p>+ Papas Fritas</p>
+                        <p>+ Ensalada</p>
+                        <p>+ Cremas</p>
+                        <h3 class="precio">S/8.00</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="menu-category mollejitas">
+                <h2>Mollejitas</h2>
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>Mollejitas Comunes</h3>
+                        <p>+ Mollejitas a la Parrilla</p>
+                        <p>+ Papas Fritas</p>
+                        <p>+ Ensalada</p>
+                        <p>+ Cremas</p>
+                        <h3 class="precio">S/10.00</h3>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>Mostrito de Mollejitas</h3>
+                        <p>+ Arroz Chaufa</p>
+                        <p>+ Mollejitas a la Parrilla</p>
+                        <p>+ Papas Fritas</p>
+                        <p>+ Ensalada</p>
+                        <p>+ Cremas</p>
+                        <h3 class="precio">S/16.00</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="menu-category pollo-frito">
+                <h2>Pollo Frito</h2>
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>Pollo Frito Común</h3>
+                        <p>+ Plancha de Pollo Frito</p>
+                        <p>+ Papas Fritas</p>
+                        <p>+ Ensalada</p>
+                        <p>+ Cremas</p>
+                        <h3 class="precio">S/9.00</h3>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>Mostrito de Pollo Frito</h3>
+                        <p>+ Arroz Chaufa</p>
+                        <p>+ Pollo Frito</p>
+                        <p>+ Papas Fritas</p>
+                        <p>+ Ensalada</p>
+                        <p>+ Cremas</p>
+                        <h3 class="precio">S/16.00</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="menu-category mostrito-de-alitas-broaster">
+                <h2>Mostrito de Alitas Broaster</h2>
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>Mostrito 1 Alita Broaster</h3>
+                        <p>+ Arroz Chaufa</p>
+                        <p>+ 1 Alita Broaster</p>
+                        <p>+ Papas Fritas</p>
+                        <p>+ Ensalada</p>
+                        <p>+ Cremas</p>
+                        <h3 class="precio">S/15.00</h3>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>Mostrito 2 Alitas Broaster</h3>
+                        <p>+ Arroz Chaufa</p>
+                        <p>+ 2 Alitas Broaster</p>
+                        <p>+ Papas Fritas</p>
+                        <p>+ Ensalada</p>
+                        <p>+ Cremas</p>
+                        <h3 class="precio">S/20.00</h3>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>Mostrito 3 Alitas Broaster</h3>
+                        <p>+ Arroz Chaufa</p>
+                        <p>+ 3 Alitas Broaster</p>
+                        <p>+ Papas Fritas</p>
+                        <p>+ Ensalada</p>
+                        <p>+ Cremas</p>
+                        <h3 class="precio">S/27.00</h3>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>Mostrito 4 Alitas Broaster</h3>
+                        <p>+ Arroz Chaufa</p>
+                        <p>+ 4 Alitas Broaster</p>
+                        <p>+ Papas Fritas</p>
+                        <p>+ Ensalada</p>
+                        <p>+ Cremas</p>
+                        <h3 class="precio">S/35.00</h3>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>Mostrito 5 Alitas Broaster</h3>
+                        <p>+ Arroz Chaufa</p>
+                        <p>+ 5 Alitas Broaster</p>
+                        <p>+ Papas Fritas</p>
+                        <p>+ Ensalada</p>
+                        <p>+ Cremas</p>
+                        <h3 class="precio">S/42.00</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="menu-category mostrito-pollo-broaster">
+                <h2>Mostrito Pollo Broaster</h2>
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>Pollo Broaster Común</h3>
+                        <p>+ Pollo Broaster</p>
+                        <p>+ Papas Fritas</p>
+                        <p>+ Ensalada</p>
+                        <p>+ Cremas</p>
+                        <h3 class="precio">S/9.00</h3>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>Mostrito de Pollo Broaster</h3>
+                        <p>+ Chaufa</p>
+                        <p>+ Pollo Broaster</p>
+                        <p>+ Papas Fritas</p>
+                        <p>+ Ensalada</p>
+                        <p>+ Cremas</p>
+                        <h3 class="precio">S/16.00</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category combos">
+                <h2>Combos</h2>
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>Combo King Grasas 01</h3>
+                        <p>+ 1 Alita Broaster</p>
+                        <p>+ 1 Hamburguesa Clásica</p>
+                        <p>+ 1 Porción de Chaufa Chino</p>
+                        <p>+ 1 Porción de Papas Extras</p>
+                        <p>+ 1 Gaseosa Inka u Oro Personal</p>
+                        <h3 class="precio">S/29.90</h3>
+                    </div>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>Combo King Grasas 02</h3>
+                        <p>+ 1 Salchipapas</p>
+                        <p>+ 1 Hamburguesa Clásica</p>
+                        <h3 class="precio">S/13.00</h3>
+                    </div>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>Combo King Grasas 03</h3>
+                        <p>+ 1 Hamburguesa Clásica</p>
+                        <p>+ 1 Porción Papas Extras</p>
+                        <p>+ 1 Porción Pollo Broaster</p>
+                        <p>+ 1 Gaseosa Personal</p>
+                        <h3 class="precio">S/19.00</h3>
+                    </div>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>Combo King Grasas 04</h3>
+                        <p>+ 1 Hamburguesa Royal</p>
+                        <p>+ 1 Gaseosa Oro Personal</p>
+                        <h3 class="precio">S/13.00</h3>
+                    </div>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>Combo King Grasas 05</h3>
+                        <p>+ 1 Hamburguesa Clásica</p>
+                        <p>+ 1 Parrilla De Pollo</p>
+                        <p>+ 1 Porción De Chaufa Chino</p>
+                        <p>+ 1 Gaseosa Oro Personal</p>
+                        <h3 class="precio">S/29.00</h3>
+                    </div>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>Combo King Grasas 06</h3>
+                        <p>+ 1 Porción De Mollejitas</p>
+                        <p>+ 1 Hamburguesa Clásica</p>
+                        <p>+ 1 Porción De Chaufa Chino</p>
+                        <p>+ 1 Gaseosa Oro Personal</p>
+                        <p>+ 1 Porción De Papas Extras</p>
+                        <h3 class="precio">S/29.00</h3>
+                    </div>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>Combo King Grasas 07</h3>
+                        <p>+ 1 Mostrito De 1/4 Pollo A La Braza</p>
+                        <p>+ 1 Gaseosa Oro Personal</p>
+                        <h3 class="precio">S/27.00</h3>
+                    </div>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>Combo King Grasas 08</h3>
+                        <p>+ 1 Hamburguesa Clásica</p>
+                        <p>+ 1 Porción De Papas Extras</p>
+                        <p>+ 1 Gaseosa Personal</p>
+                        <h3 class="precio">S/10.00</h3>
+                    </div>
+                </div>
+            </div>
+            
+
+
+        </section>
+    </main>
+
+    <script src="../Java-Script/cartilla.js"></script>
+</body>
+</html>
