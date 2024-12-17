@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    font-family: 'Poppins', 'sans-serif';
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    position: relative;
+}
+
+.menu {
+    background-color: #709C8C;
+    background-image: url(''); /* Ruta a tu imagen de fondo */
+    background-size: cover; /* Hace que la imagen cubra todo el área del encabezado */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    position: fixed; /* Hace que el encabezado se quede fijo en la parte superior al hacer scroll */
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100vw; /* Asegura que tome el 100% del ancho del viewport */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    padding: 0 20px; /* Añadido padding para que el contenido no toque los bordes */
+    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño del elemento */
+    height: 60px; /* Ajusta la altura del encabezado según sea necesario */
+    max-width: 11000px;
+}
+
+.logo {
+    color: #303030;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #303030;
+    display: block;
+    font-weight: 600;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.bg {
+    position: absolute;
+    width: 700px;
+    z-index: -1;
+    right: 0;
+}
+
+.esp {
+    position: absolute;
+    top: 700px;
+    bottom: 0;
+    width: 350px;
+}
+
+.header-info {
+    display: flex;
+    align-items: center;
+}
+
+.header-txt {
+    width: 50%;
+    padding-right: 35px;
+}
+
+.header-txt h1 {
+    font-size: 55px;
+    line-height: 70px;
+    font-weight: 600;
+    color: #303030;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+
+.header-txt p {
+    font-size: 16px;
+    color: #545454;
+    margin-bottom: 15px;
+}
+
+.header-img {
+    width: 50%;
+}
+
+.header-img img {
+    width: 600px;
+}
+
+@media(max-width: 991px) {
+    .menu {
+        padding: 30px;
+    }
+    .menu label {
+        display: initial;
+    }
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #303030;
+        display: none;
+    }
+    .menu .navbar ul {
+        display: flex;
+        flex-direction: column;
+    }
+    .menu .navbar ul li {
+        width: 100%;
+        text-align: center;
+    }
+    .menu .navbar ul li a {
+        color: #ffffff;
+        display: block;
+        padding: 15px 20px;
+    }
+    .menu .navbar ul li a:hover {
+        color: #bebebe;
+    }
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+    .bg {
+        width: 500px;
+    }
+    .esp {
+        display: none;
+    }
+    .header-info {
+        flex-direction: column;
+        padding: 30px;
+        margin-top: 70px;
+    }
+    .header-txt {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+    .header-txt h1 {
+        line-height: 50px;
+        font-size: 35px;
+        font-weight: 700;
+    }
+
+    .header-img img {
+        display: none;
+    }
+}
+/* Estilos para la sección de tiendas */
+.tiendas {
+    /* Permite que los elementos hijos (las tiendas) se alineen en fila y se ajusten automáticamente en filas adicionales si no caben en una sola línea */
+    display: flex;
+    flex-wrap: wrap;
+    
+    /* Centra las tarjetas de las tiendas horizontalmente */
+    justify-content: center;
+    
+    /* Espacio entre las tarjetas */
+    gap: 20px;
+    
+    /* Margen superior del contenedor */
+    margin-top: 50px;
+    
+    /* Color de fondo suave para hacer que las tarjetas resalten */
+    background-color: #f9f9f9;
+    
+    /* Espaciado interior del contenedor */
+    padding: 20px;
+    
+    /* Bordes redondeados para el contenedor */
+    border-radius: 12px;
+}
+
+.header-txt h1 {
+    /* Color oscuro para el texto del encabezado */
+    color: #303030;
+    
+    /* Tamaño de fuente del encabezado */
+    font-size: 36px;
+    
+    /* Centra el texto del encabezado */
+    text-align: center;
+    
+    /* Margen inferior para separar el encabezado del contenido siguiente */
+    margin-bottom: 20px;
+}
+
+
+.tienda {
+    /* Color de fondo blanco para las tarjetas */
+    background-color: #fff;
+    
+    /* Borde sutil alrededor de cada tarjeta */
+    border: 1px solid #ddd;
+    
+    /* Bordes redondeados para las tarjetas */
+    border-radius: 16px;
+    
+    /* Sombra ligera para darle profundidad a las tarjetas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+    /* Controla el contenido desbordado dentro de las tarjetas */
+    overflow: hidden;
+    
+    /* Ancho calculado para que tres tarjetas quepan en una fila con el espacio entre ellas */
+    width: calc(33.333% - 20px);
+    
+    /* Margen inferior para separar verticalmente las tarjetas */
+    margin-bottom: 20px;
+    
+    /* Centra el texto y otros elementos dentro de las tarjetas */
+    text-align: center;
+    
+    /* Transición suave para transformaciones y sombras */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+    /* Espaciado interior de la tarjeta */
+    padding: 20px;
+    
+    /* Flexbox para alinear verticalmente los elementos dentro de la tarjeta */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.tienda:hover {
+    /* Mueve la tarjeta hacia arriba cuando el cursor pasa por encima */
+    transform: translateY(-10px);
+    
+    /* Incrementa la sombra para hacerla más prominente en hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+.tienda img {
+    /* Hace que la imagen ocupe todo el ancho disponible */
+    width: 100%;
+    
+    /* Define una altura fija para las imágenes */
+    height: 200px;
+    
+    /* Asegura que la imagen cubra todo el área del contenedor sin distorsionarse */
+    object-fit: cover;
+    
+    /* Bordes redondeados para las imágenes */
+    border-radius: 12px;
+}
+
+.tienda h3 {
+    /* Tamaño de fuente más grande y negrita para destacar el nombre del negocio */
+    font-size: 22px;
+    font-weight: 700;
+    
+    /* Color del texto del título */
+    color: #303030;
+    
+    /* Margen superior e inferior para separar el título del resto del contenido */
+    margin: 15px 0;
+}
+
+.tienda .descripcion {
+    /* Tamaño de fuente ligeramente más grande para la descripción */
+    font-size: 14px;
+    
+    /* Color del texto de la descripción */
+    color: #545454;
+    
+    /* Margen superior e inferior para separar la descripción de otros elementos */
+    margin: 5px 0;
+}
+
+
+.tienda p {
+    /* Tamaño de fuente estándar para la información adicional */
+    font-size: 14px;
+    
+    /* Color del texto para que sea fácilmente legible */
+    color: #747474;
+    
+    /* Margen para separar los párrafos del borde y entre ellos */
+    margin: 5px 10px;
+}
+
+/* Estilo del botón de "Ver Más" */
+.btn-ver-mas {
+    /* Hacer que el botón sea un bloque en línea */
+    display: inline-block;
+    
+    /* Espaciado interior del botón */
+    padding: 10px 20px;
+    
+    /* Margen superior para separar el botón del contenido anterior */
+    margin-top: 15px;
+    
+    /* Color de fondo verde para el botón */
+    background-color: #3e773e;
+    
+    /* Color del texto del botón */
+    color: #fff;
+    
+    /* Quitar la decoración de texto subrayado */
+    text-decoration: none;
+    
+    /* Tamaño de fuente y negrita para el texto del botón */
+    font-size: 14px;
+    font-weight: 600;
+    
+    /* Bordes redondeados para el botón */
+    border-radius: 8px;
+    
+    /* Transición suave para el cambio de color de fondo */
+    transition: background-color 0.3s ease;
+}
+
+/* Efecto hover para el botón de "Ver Más" */
+.btn-ver-mas:hover {
+    /* Cambia el color de fondo a un verde más oscuro al pasar el cursor */
+    background-color: #66b766;
+}
+
+
+@media (max-width: 991px) {
+    .tienda {
+        width: calc(94% - 100px);
+        width: 80%;
+    }
+}
+
+/* Busqueda de negocios */
+.busqueda-filtro {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#searchBar, #categoryFilter {
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    width: 48%;
+}
+
+
+@media (max-width: 991px) {
+    #searchBar, #categoryFilter {
+        width: 49%;
+        margin-bottom: 1px;
+    }
+}
+
+
+
+
+
+/* Botones base */
+.boton {
+
+    color: #fff; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño del texto */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Efectos de transición */
+
+}
+
+
+
+/* Botones responsivos para móviles */
+@media (max-width: 991px) {
+    .boton {
+        width: 95%; /* Los botones ocupan el ancho completo */
+        font-size: 14px; /* Tamaño del texto reducido */
+        padding: 1px; /* Ajuste del padding */
+    }
+}
