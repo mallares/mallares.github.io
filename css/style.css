@@ -674,7 +674,7 @@ hr{
     .collection-grid::before,
     .collection-grid::after {
         content: ""; /* Elemento vacío para espaciado */
-        flex: 0 0 20px; /* Espacio igual al gap (ajústalo según el diseño) */
+        flex: 0 0 50%; /* Espacio igual al gap (ajústalo según el diseño) */
     }
     /* Estilo base de cada cuadro */
 .collection-item {
@@ -698,7 +698,7 @@ hr{
 .collection-item.active {
     transform: scale(1.1); /* Agrandar un poco más */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Sombra más marcada */
-    border-color: #007bff; /* Cambia el color del borde */
+    border-color: #709C8C; /* Cambia el color del borde */
 }
 
     .collection-image {
