@@ -366,7 +366,6 @@ hr{
     }
     .header-info{
         flex-direction: column;
-        padding: 30px;
         margin-top: 70px;
 
     }
@@ -544,7 +543,7 @@ hr{
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Agrega una sombra al texto */
 }
 /* Estilos responsivos */
-@media (max-width: 768px) {
+@media (max-width: 991px) {
     .main-match-shedule {
         margin-top: 0px; /* Mueve toda la sección hacia abajo */
         padding: 20px;
@@ -714,3 +713,5 @@ hr{
         color: #333;
     }
 }
+
+
