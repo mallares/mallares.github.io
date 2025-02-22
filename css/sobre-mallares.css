@@ -467,3 +467,7 @@ th, td {
 tr:nth-child(15) td:nth-child(1), tr:nth-child(15) td:nth-child(2){
     background-color: #ffe0e0;
 }
+
+* {
+    -webkit-tap-highlight-color: transparent;
+}
