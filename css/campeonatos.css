@@ -258,3 +258,6 @@ body {
     flex-direction: column;
     gap: 5px;
 }
+* {
+    -webkit-tap-highlight-color: transparent;
+}
