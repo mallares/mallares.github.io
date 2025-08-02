@@ -22,11 +22,21 @@
   <meta property="og:type" content="website">
 
   <link rel="icon" href="images/favicon.png" type="image/png">
-  <link rel="stylesheet" href="css/style.css?v=2025-08-02">
+  <link rel="stylesheet" href="css/style.css">
   <title>Campeonato de Fútbol Mallares 2025 | Equipos, Partidos y Resultados</title>
 </head>
 
 <body>
+  <script>
+  const versionActual = "v1"; // Cambia este valor cada vez que actualices tu web
+
+  const versionGuardada = localStorage.getItem("versionGuardada");
+
+  if (versionGuardada !== versionActual) {
+    localStorage.setItem("versionGuardada", versionActual);
+    location.reload(true); // Fuerza recarga del sitio
+  }
+</script>
 
   <header class="header">
     <img class="bg" src="images/bg2.png" alt="Fondo del campeonato">
@@ -49,7 +59,7 @@
     <div class="header-content container">
       <div class="header-info">
         <div class="header-txt">
-          <h1>Campeonato Mallares</h1>
+          <h1>Campeonato Mallares PE</h1>
           <p>
             !Toda la emoción del fútbol de Mallares en un solo lugar¡ Revisa el cronograma, resultados y sigue a tu equipo jornada a jornada.
           </p>
@@ -195,6 +205,7 @@
 </body>
 <script src="Java-Script/index.js"></script>
 </html>
+
 
 
 
