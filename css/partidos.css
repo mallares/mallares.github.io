@@ -147,21 +147,30 @@ body {
 /* ====== TABLA CSS ======= */
 
 .tabla-resultados {
-    width: 97%;
+    width: 100%;
     background-color: #fff;
     border: 1px solid #ddd;
-    border-radius: 5px;
+
     overflow: hidden;
     flex-direction: column;
-    margin-top: 60px;
+    margin-top: 59px;
 }
 
 .tabla-header {
-    background: #ddd;
+    background: linear-gradient(to right,
+    #709C8C 0%, 
+    #9FBCB1 30%, 
+    #F0F5F3 50%, 
+    #9FBCB1 70%, 
+    #709C8C 100%
+);
+
+
+
     padding: 10px;
     font-weight: bold;
     text-align: center;
-    color: #333;
+    color: #2F3E3E;
 }
 
 .tabla-row {
@@ -289,42 +298,4 @@ body {
     }
 }
 
-.sin-datos {
-  padding: 90px 20px;
-  text-align: center;
-  background-color: #f8f8f8;
-}
-
-.mensaje-vacio {
-  font-size: 28px;
-  font-weight: bold;
-  color: #555;
-  margin-bottom: 10px;
-}
-
-.descripcion-vacio {
-  font-size: 18px;
-  color: #777;
-}
-.equipo-wrapper {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    justify-content: flex-start;
-    max-width: 200px;
-    flex-wrap: wrap;
-}
-
-.equipo-wrapper img {
-    width: 28px;
-    height: 28px;
-    flex-shrink: 0;
-}
-
-.equipo-wrapper span {
-    word-break: break-word;
-    max-width: 150px;
-    font-size: 15px;
-    line-height: 1.2;
-}
 
