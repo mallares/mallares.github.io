@@ -3,23 +3,23 @@
         "posicion": 1,
         "equipo": "Acapulco",
         "logo": "../images/Acapulco-Mallares.png",
-        "pj": 0,
-        "pg": 0,
+        "pj": 2,
+        "pg": 4,
         "pe": 0,
         "pp": 0,
         "goles": "0-0",
-        "pts": 0
+        "pts": 2
     },
     {
         "posicion": 2,
         "equipo": "Alianza Mallares",
         "logo": "../images/Alianza-Mallares.png",
-        "pj": 0,
-        "pg": 0,
+        "pj": 2,
+        "pg": 4,
         "pe": 0,
         "pp": 0,
         "goles": "0-0",
-        "pts": 0
+        "pts": 10
     },
     {
         "posicion": 3,
@@ -154,3 +154,4 @@
         "pts": 0
     }
 ]
+
