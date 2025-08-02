@@ -11,6 +11,16 @@
     <link rel="stylesheet" href="../css/tabla.css">
 </head>
 <body>
+    <script>
+  const versionActual = "v3"; // Cambia este valor cada vez que actualices tu web
+
+  const versionGuardada = localStorage.getItem("versionGuardada");
+
+  if (versionGuardada !== versionActual) {
+    localStorage.setItem("versionGuardada", versionActual);
+    location.reload(true); // Fuerza recarga del sitio
+  }
+</script>
 
     <header class="header">
         <img class="bg" src="#" alt="">
@@ -59,4 +69,5 @@
 <script src="../Java-Script/tablas.js"></script>
 
 </html>
+
 
