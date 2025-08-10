@@ -113,11 +113,11 @@
         "posicion": 11,
         "equipo": "Real Pikin FC",
         "logo": "../images/Real-Pikin.png",
-        "pj": 0,
+        "pj": 1,
         "pg": 0,
         "pe": 0,
-        "pp": 0,
-        "goles": "0-0",
+        "pp": 1,
+        "goles": "1-2",
         "pts": 0
     },
     {
@@ -135,12 +135,12 @@
         "posicion": 13,
         "equipo": "S. Valentin",
         "logo": "../images/Sport_Valentin.png",
-        "pj": 0,
-        "pg": 0,
+        "pj": 1,
+        "pg": 1,
         "pe": 0,
         "pp": 0,
-        "goles": "0-0",
-        "pts": 0
+        "goles": "2-1",
+        "pts": 3
     },
     {
         "posicion": 14,
