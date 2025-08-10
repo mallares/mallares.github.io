@@ -157,21 +157,13 @@ body {
 }
 
 .tabla-header {
-    background: linear-gradient(to right,
-    #709C8C 0%, 
-    #9FBCB1 30%, 
-    #F0F5F3 50%, 
-    #9FBCB1 70%, 
-    #709C8C 100%
-);
-
-
-
+background-color: #f4f4f4;
     padding: 10px;
     font-weight: bold;
     text-align: center;
     color: #2F3E3E;
 }
+
 
 .tabla-row {
     display: flex;
