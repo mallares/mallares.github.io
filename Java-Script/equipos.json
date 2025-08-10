@@ -25,11 +25,11 @@
         "posicion": 3,
         "equipo": "Bellavista",
         "logo": "../images/Bellavista-Mallares.png",
-        "pj": 0,
+        "pj": 1,
         "pg": 0,
         "pe": 0,
-        "pp": 0,
-        "goles": "0-0",
+        "pp": 1,
+        "goles": "0-1",
         "pts": 0
     },
     {
@@ -47,12 +47,12 @@
         "posicion": 5,
         "equipo": "FCB Panamericana",
         "logo": "../images/Barcelona-Mallares.png",
-        "pj": 0,
-        "pg": 0,
+        "pj": 1,
+        "pg": 1,
         "pe": 0,
         "pp": 0,
-        "goles": "0-0",
-        "pts": 0
+        "goles": "1-0",
+        "pts": 3
     },
     {
         "posicion": 6,
