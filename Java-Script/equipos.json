@@ -14,12 +14,12 @@
         "posicion": 2,
         "equipo": "Alianza Mallares",
         "logo": "../images/Alianza-Mallares.png",
-        "pj": 0,
+        "pj": 1,
         "pg": 0,
-        "pe": 0,
+        "pe": 1,
         "pp": 0,
         "goles": "0-0",
-        "pts": 0
+        "pts": 1
     },
     {
         "posicion": 3,
@@ -36,12 +36,12 @@
         "posicion": 4,
         "equipo": "E. Juveniles",
         "logo": "../images/Estrellas-Juveniles.png",
-        "pj": 0,
-        "pg": 0,
+        "pj": 1,
+        "pg": 1,
         "pe": 0,
         "pp": 0,
-        "goles": "0-0",
-        "pts": 0
+        "goles": "2-1",
+        "pts": 3
     },
     {
         "posicion": 5,
@@ -69,11 +69,11 @@
         "posicion": 7,
         "equipo": "La Victoria",
         "logo": "../images/lavictoria.png",
-        "pj": 0,
+        "pj": 1,
         "pg": 0,
         "pe": 0,
-        "pp": 0,
-        "goles": "0-0",
+        "pp": 1,
+        "goles": "1-2",
         "pts": 0
     },
     {
@@ -91,12 +91,12 @@
         "posicion": 9,
         "equipo": "Nueva Esperanza",
         "logo": "../images/Nueva-Esperanza.png",
-        "pj": 0,
+        "pj": 1,
         "pg": 0,
-        "pe": 0,
+        "pe": 1,
         "pp": 0,
         "goles": "0-0",
-        "pts": 0
+        "pts": 1
     },
     {
         "posicion": 10,
@@ -124,12 +124,12 @@
         "posicion": 12,
         "equipo": "S. Rimarket",
         "logo": "../images/Rimarket-Mallares.png",
-        "pj": 0,
+        "pj": 1,
         "pg": 0,
-        "pe": 0,
+        "pe": 1,
         "pp": 0,
         "goles": "0-0",
-        "pts": 0
+        "pts": 1
     },
     {
         "posicion": 13,
@@ -146,13 +146,11 @@
         "posicion": 14,
         "equipo": "San Pedro",
         "logo": "../images/San-Pedro.png",
-        "pj": 0,
+        "pj": 1,
         "pg": 0,
-        "pe": 0,
+        "pe": 1,
         "pp": 0,
         "goles": "0-0",
-        "pts": 0
+        "pts": 1
     }
 ]
-
-
