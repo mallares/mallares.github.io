@@ -157,7 +157,7 @@ body {
 }
 
 .tabla-header {
-background-color: #f4f4f4;
+background-color: #e6e6e6;
     padding: 10px;
     font-weight: bold;
     text-align: center;
@@ -289,5 +289,6 @@ background-color: #f4f4f4;
         width: 300px;
     }
 }
+
 
 
