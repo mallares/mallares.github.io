@@ -31,10 +31,26 @@
 
             // Ordenar por Puntos (pts), Goles (goles), Partidos Ganados (pg)
             data.sort((a, b) => {
-                if (b.pts !== a.pts) return b.pts - a.pts; // Primero por puntos
-                if (b.goles !== a.goles) return b.goles - a.goles; // Luego por goles
-                return b.pg - a.pg; // Finalmente por partidos ganados
-            });
+            // Parsear goles
+            const [gfA, gcA] = a.goles.split('-').map(Number);
+            const [gfB, gcB] = b.goles.split('-').map(Number);
+        
+            const dgA = gfA - gcA;
+            const dgB = gfB - gcB;
+        
+            // Ordenar por puntos
+            if (b.pts !== a.pts) return b.pts - a.pts;
+        
+            // Luego por diferencia de goles
+            if (dgB !== dgA) return dgB - dgA;
+        
+            // Luego por goles a favor
+            if (gfB !== gfA) return gfB - gfA;
+        
+            // Finalmente por partidos ganados
+            return b.pg - a.pg;
+        });
+
 
             data.forEach((equipo, index) => {
     const row = document.createElement("tr");
@@ -59,3 +75,4 @@
         })
         .catch(error => console.error("Error al cargar la tabla:", error));
 });
+
